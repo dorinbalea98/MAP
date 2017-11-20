@@ -11,7 +11,7 @@ public class VarExpression extends Expression {
 		id=i;
 	}
 	@Override
-	public int Eval(MyIDictionary<String, Integer> tbl) throws ExpressionException {
+	public int Eval(MyIDictionary<String, Integer> tbl, MyIDictionary<Integer,Integer> heap) throws ExpressionException {
 		try{
 			return tbl.get_value(id); 
 		}

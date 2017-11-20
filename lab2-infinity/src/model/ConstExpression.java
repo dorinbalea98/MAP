@@ -10,7 +10,7 @@ public class ConstExpression extends Expression{
 		number=n;
 	}
 	@Override
-	public int Eval(MyIDictionary<String, Integer> tbl) throws ExpressionException {
+	public int Eval(MyIDictionary<String, Integer> tbl,MyIDictionary<Integer, Integer> heap) throws ExpressionException {
 		return number;
 	}
 

@@ -1,4 +1,8 @@
 package tools;
+import java.io.BufferedReader;
+import java.util.HashMap;
+import java.util.Iterator;
+
 import Exceptions.MyDictionaryExceptions;
 
 public interface MyIDictionary<K,E> {
@@ -8,5 +12,10 @@ public interface MyIDictionary<K,E> {
 	public boolean exists(K key);
 	public E get_value(K key) throws MyDictionaryExceptions;
 	public String toString();
+	public int generateId();
+	public boolean ExistsInFirst(String el) throws MyDictionaryExceptions;
+	public boolean ExistsInSecond(BufferedReader el) throws MyDictionaryExceptions;
+	public Iterator<HashMap.Entry<K, E>> getIterator();
+	public boolean isEmpty();
 
 }

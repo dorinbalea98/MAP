@@ -1,7 +1,6 @@
 package Controller;
 
 import Exceptions.ControllerExceptions;
-import Exceptions.MyListException;
 import Exceptions.MyStackException;
 import Exceptions.RepoExceptions;
 import Exceptions.StmtExceptions;
@@ -9,34 +8,20 @@ import Repository.MyIRepository;
 import model.PrgState;
 import model.IStmt;
 import tools.MyIStack;
-import tools.MyIList;
-import tools.MyList;
 public class MyController implements MyIController{
 
 	private MyIRepository repo;
-	private MyIList<PrgState> auxList;
 	public MyController(MyIRepository r)
 	{
-		auxList = new MyList<PrgState>();
 		repo=r;
-		try{
-		for(int i=0; i<repo.getPrograms().length();i++)
-		{
-			auxList.append(repo.getPrograms().get_value(i));
-		}
-		}
-		catch(MyListException e){}
 	}
 	@Override
-	public PrgState oneStep(int index) throws ControllerExceptions {
+	public PrgState oneStep() throws ControllerExceptions {
 		
 		try{
-			PrgState state = repo.getPrgOnPosition(index);
+			PrgState state = repo.getCurrentPrg();
 			MyIStack<IStmt> stk = state.getStack();
-			System.out.println(state.getStack().toString());
-			System.out.println(state.getSymtbl().toString());
-			System.out.println(state.getOut().toString());
-			System.out.println();
+			this.repo.logPrgStateExec();
 			IStmt crtStmt = stk.pop();
 			return crtStmt.execute(state);
 		}
@@ -55,12 +40,12 @@ public class MyController implements MyIController{
 	}
 
 	@Override
-	public void allSteps(int index) throws ControllerExceptions {
+	public void allSteps() throws ControllerExceptions {
 		try{
 			
 			while(true)
 			{
-				oneStep(index);
+				this.repo.setCurrentPrg(oneStep());
 			
 			}
 		}
@@ -71,48 +56,17 @@ public class MyController implements MyIController{
 			else
 				throw new ControllerExceptions(e.getMessage());
 		}
+		catch(RepoExceptions r)
+		{
+			throw new ControllerExceptions(r.getMessage());
+		}
 		
 		
 	}
 	@Override
-	public void completeExcecution(int index) throws ControllerExceptions {
-		try{
-			PrgState state = repo.getPrgOnPosition(index);
-			MyIStack<IStmt> stk = state.getStack();
-			while(!stk.is_empty())
-			{
-				System.out.println(stk.toString());
-				System.out.println(state.getSymtbl().toString());
-				System.out.println(state.getOut().toString());
-				System.out.println();
-				IStmt crtStmt = stk.pop();
-				state= crtStmt.execute(state);
-				
-			}
-		}
-		catch(RepoExceptions re)
-		{
-			throw new ControllerExceptions(re.getMessage());
-		}
-		catch(MyStackException se)
-		{
-			throw new ControllerExceptions(se.getMessage());
-		} catch (StmtExceptions e) {
-			throw new ControllerExceptions(e.getMessage());
-		}
-		
-		
-		
+	public void setLogPath(String log) {
+		this.repo.setLogPath(log);
 	}
-	@Override
-	public void resetProgram(int index) throws ControllerExceptions {
-		try{
-			repo.update(index, auxList.get_value(index));
-		}
-		catch(MyListException e )
-		{
-			throw new ControllerExceptions(e.getMessage());
-		}
-	}
+
 
 }

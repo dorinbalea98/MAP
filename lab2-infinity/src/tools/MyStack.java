@@ -35,23 +35,12 @@ public class MyStack<T> implements MyIStack<T> {
 	@Override
 	public String toString()
 	{
-		String res;
-		res="[";
-		try{
-			Object[] obj = this.st.toArray();
-			for(int i=obj.length-1;i>0;i--)
-			{
-				res=res+obj[i].toString() + " | ";
-			}
-			if (obj.length > 0)
-			{
-				res+=obj[0].toString();
-			}
-		}
-		catch(NullPointerException e){
-		
-		}
-		res+="]";
+		if(st.isEmpty())
+			return "Stack is empty\n";
+		String res="Exe stack:\n";
+		Object[] val= st.toArray();
+		for(int i=st.size()-1;i>=0;i--)
+			res+=val[i].toString() + '\n';
 		return res;
 	}
 	

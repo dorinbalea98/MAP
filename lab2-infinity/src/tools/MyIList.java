@@ -7,5 +7,5 @@ public interface MyIList<T> {
 	public String toString();
 	public T get_value(int key) throws MyListException;
 	public int length();
-	public void update(int key, T val);
+	public void update(int key, T val) throws MyListException;
 }

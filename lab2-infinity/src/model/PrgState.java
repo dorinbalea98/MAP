@@ -1,17 +1,23 @@
 package model;
+import java.io.BufferedReader;
+
 import tools.*;
 public class PrgState {
 	private MyIStack<IStmt> exeStack;
 	private MyIDictionary<String, Integer> symtbl;
+	private MyIDictionary<Integer, MyTuple<String, BufferedReader>> filetable;
 	private MyIList<Integer> out;
+	private MyIDictionary<Integer,Integer> heap;
 	private IStmt originalProgram;
 	
-	public PrgState(MyIStack<IStmt> stk, MyIDictionary<String,Integer> sym, MyIList<Integer> o, IStmt prg)
+	public PrgState(MyIStack<IStmt> stk, MyIDictionary<String,Integer> sym, MyIList<Integer> o,MyIDictionary<Integer, MyTuple<String, BufferedReader>> ft, MyIDictionary<Integer,Integer> heap ,IStmt prg)
 	{
 		exeStack=stk;
 		symtbl=sym;
 		out=o;
 		originalProgram=prg;
+		filetable=ft;
+		this.heap=heap;
 		stk.push(prg);
 		
 	}
@@ -29,6 +35,21 @@ public class PrgState {
 	public MyIList<Integer> getOut()
 	{
 		return this.out;
+	}
+	
+	public MyIDictionary<Integer, MyTuple<String, BufferedReader>> getFileTable()
+	{
+		return this.filetable;
+	}
+	
+	public MyIDictionary<Integer,Integer> getHeap()
+	{
+		return this.heap;
+	}
+	
+	public void setHeap(MyIDictionary<Integer,Integer> heap)
+	{
+		this.heap=heap;
 	}
 	
 	public IStmt getOriginalProgram()
@@ -51,6 +72,11 @@ public class PrgState {
 		this.out=l;
 	}
 	
+	public void setFileTable(MyIDictionary<Integer, MyTuple<String, BufferedReader>> ft)
+	{
+		this.filetable=ft;
+	}
+	
 	public void setOriginalProgram(IStmt orp)
 	{
 		this.originalProgram=orp;
@@ -59,8 +85,13 @@ public class PrgState {
 	@Override
 	public String toString()
 	{
-		//to be implemented
-		return null;
+		String res="";
+		res+=this.getStack().toString() +'\n';
+		res+=this.getSymtbl().toString()+'\n';
+		res+=this.getOut().toString() + '\n';
+		res+=this.getFileTable().toString();
+		res+='\n';
+		return res;
 	}
 	
 } 

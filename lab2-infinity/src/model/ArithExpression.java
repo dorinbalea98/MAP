@@ -15,21 +15,21 @@ public class ArithExpression extends Expression{
 	}
 	
 	@Override
-	public int Eval(MyIDictionary<String, Integer> tbl) throws ExpressionException {
+	public int Eval(MyIDictionary<String, Integer> tbl,MyIDictionary<Integer, Integer> heap) throws ExpressionException {
 		if(op==1)
-			return (first.Eval(tbl) + second.Eval(tbl));
+			return (first.Eval(tbl,heap) + second.Eval(tbl,heap));
 		
 		if(op==2)
-			return (first.Eval(tbl) - second.Eval(tbl));
+			return (first.Eval(tbl,heap) - second.Eval(tbl,heap));
 		
 		if(op==3)
-			return (first.Eval(tbl) * second.Eval(tbl));
+			return (first.Eval(tbl,heap) * second.Eval(tbl,heap));
 		
 		if(op==4)
 		{
-			if(second.Eval(tbl)==0)
+			if(second.Eval(tbl,heap)==0)
 				throw new ExpressionException("Division by 0");
-			return (first.Eval(tbl) / second.Eval(tbl));
+			return (first.Eval(tbl,heap) / second.Eval(tbl,heap));
 			
 		}
 		return 0;

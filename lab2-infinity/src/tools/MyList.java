@@ -1,12 +1,13 @@
 package tools;
 import java.util.List;
-import java.util.LinkedList;
+import java.util.ListIterator;
+import java.util.ArrayList;
 import Exceptions.MyListException;
 public class MyList<T> implements MyIList<T> {
 	private List<T> list;
 	public MyList()
 	{
-		list = new LinkedList<T>();
+		list = new ArrayList<T>();
 	}
 	public void append(T val)
 	{
@@ -25,9 +26,15 @@ public class MyList<T> implements MyIList<T> {
 		
 	}
 	
-	public void update(int key, T val)
+	public void update(int key, T val) throws MyListException
 	{
+		if(key<0 || key>=list.size())
+			throw new MyListException("Index out of bounds!");
 		list.set(key, val);
+	}
+	
+	public ListIterator<T> getIterator(){
+		return list.listIterator();
 	}
 	
 	public void insert(int pos, T val) throws MyListException
@@ -37,19 +44,18 @@ public class MyList<T> implements MyIList<T> {
 		list.add(pos, val);
 	}
 	
+	
 	@Override
 	public String toString()
 	{
-		String res;
-		res="[";
-		Object[] obj = this.list.toArray();
-		for(int i=0; i<obj.length-1; i++)
-			res=res + obj[i].toString() + " | ";
-		if(obj.length>=1)
-			res+=obj[obj.length-1].toString();
-		res+="]";
-		
+		if(list.isEmpty())
+			return "List is empty\n";
+		String res="Out:\n";
+		ListIterator<T> it=this.getIterator();
+		while(it.hasNext())
+		{
+			res+=it.next() + "\n";
+		}
 		return res;
-		
 	}
 }

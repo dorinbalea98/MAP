@@ -1,12 +1,12 @@
 package tools;
 
+import java.io.BufferedReader;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 import java.util.Map.Entry;
 import Exceptions.MyDictionaryExceptions;
 public class MyDictionary<K,E> implements MyIDictionary<K,E> {
-	private HashMap<K,E> dict;
+	protected HashMap<K,E> dict;
 	public MyDictionary()
 	{
 		this.dict = new HashMap<K,E>();
@@ -33,18 +33,43 @@ public class MyDictionary<K,E> implements MyIDictionary<K,E> {
 	@Override
 	public String toString()
 	{
-		String res;
-		res="[";
-		Iterator<Entry<K,E>> it=this.dict.entrySet().iterator();
-		while(it.hasNext())
-		{
-	
-			@SuppressWarnings("rawtypes")
-			Map.Entry pair=(Map.Entry)it.next();
-			res=res+"(Key: " + pair.getKey().toString() + " ; Element: " + pair.getValue().toString() +" ) ; ";
+		if(dict.isEmpty()){
+			return "SymTable is empty \n";
 		}
-		res=res+"]";
+		String res="SymTable:\n";
+		for(Entry<K,E> entry: dict.entrySet())
+		{
+			K key=entry.getKey();
+			E value=entry.getValue();
+			res+=key+"-->" + value +'\n';
+		}
 		return res;
 		
+	}
+	public int generateId()
+	{
+		return (int)Math.random();
+	}
+
+	@Override
+	public boolean ExistsInFirst(String el) throws MyDictionaryExceptions{
+		throw new MyDictionaryExceptions("Method not supported for MyDict");
+	}
+
+	@Override
+	public boolean ExistsInSecond(BufferedReader el) throws MyDictionaryExceptions{
+		throw new MyDictionaryExceptions("Method not supported for MyDict");
+	}
+
+	
+
+	@Override
+	public Iterator<Entry<K, E>> getIterator() {
+		return dict.entrySet().iterator();
+	}
+	@Override
+	public boolean isEmpty()
+	{
+		return dict.isEmpty();
 	}
 }
