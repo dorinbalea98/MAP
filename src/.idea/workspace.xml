@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="41d1e4b4-7dd5-4ddb-ad55-d32c5afa77dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../bin/Controller/MyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Controller/MyIController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Exceptions/ControllerExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Exceptions/ExpressionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Exceptions/MyDictionaryExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Exceptions/MyListException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Exceptions/MyStackException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Exceptions/RepoExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Exceptions/StmtExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Exceptions/ViewExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Expressions/ArithExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Expressions/ConstExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Expressions/Expression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Expressions/ReadHeapExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Expressions/VarExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Expressions/eqExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Expressions/geExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Expressions/gtExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Expressions/leExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Expressions/ltExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Expressions/neExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Repository/MyIRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Repository/MyRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/AssignmentStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/CloseRFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/CompStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/IStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/IfStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/New.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/OpenRFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/PrgState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/PrintStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/ReadFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/WhileStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Statements/WriteHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/View/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/View/Exit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/View/Interpreter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/View/RunExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/View/TextMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/tools/MyDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/tools/MyFileDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/tools/MyHeapDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/tools/MyIDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/tools/MyIList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/tools/MyIStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/tools/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/tools/MyStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/tools/MyTuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Controller/MyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Controller/MyIController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Exceptions/ControllerExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Exceptions/ExpressionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Exceptions/MyDictionaryExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Exceptions/MyListException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Exceptions/MyStackException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Exceptions/RepoExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Exceptions/StmtExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Exceptions/ViewExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Repository/MyIRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/Repository/MyRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/View/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/View/Exit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/View/Interpreter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/View/RunExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/View/TextMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/View/View.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/ArithExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/AssignmentStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/CloseRFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/CompStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/ConstExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/Expression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/IStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/IfStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/New.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/OpenRFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/PrgState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/PrintStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/ReadFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/model/VarExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/tools/MyDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/tools/MyFileDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/tools/MyHeapDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/tools/MyIDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/tools/MyIList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/tools/MyIStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/tools/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/tools/MyStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/bin/tools/MyTuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Controller/MyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Controller/MyIController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Exceptions/ControllerExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Exceptions/ExpressionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Exceptions/MyDictionaryExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Exceptions/MyListException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Exceptions/MyStackException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Exceptions/RepoExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Exceptions/StmtExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Exceptions/ViewExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Repository/MyIRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/Repository/MyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/View/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/View/Exit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/View/Interpreter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/View/RunExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/View/TextMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/View/View.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Controller/MyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Controller/MyIController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Exceptions/ControllerExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Exceptions/ExpressionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Exceptions/MyDictionaryExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Exceptions/MyListException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Exceptions/MyStackException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Exceptions/RepoExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Exceptions/StmtExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Exceptions/ViewExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Expressions/ArithExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Expressions/ConstExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Expressions/Expression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Expressions/ReadHeapExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Expressions/VarExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Expressions/eqExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Expressions/geExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Expressions/gtExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Expressions/leExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Expressions/ltExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Expressions/neExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Repository/MyIRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Repository/MyRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/AssignmentStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/CloseRFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/CompStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/Fork.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/IStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/IfStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/New.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/OpenRFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/PrgState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/PrintStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/ReadFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/WhileStmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/Statements/WriteHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/View/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/View/Exit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/View/Interpreter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/View/RunExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/View/TextMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/tools/MyDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/tools/MyFileDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/tools/MyHeapDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/tools/MyIDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/tools/MyIList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/tools/MyIStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/tools/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/tools/MyStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/bin/tools/MyTuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/ArithExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/AssignmentStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/CloseRFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/CompStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/ConstExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/Expression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/IStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/IfStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/New.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/OpenRFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/PrgState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/PrintStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/ReadFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/model/VarExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Controller/MyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Controller/MyIController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Exceptions/ControllerExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Exceptions/ExpressionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Exceptions/MyDictionaryExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Exceptions/MyListException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Exceptions/MyStackException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Exceptions/RepoExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Exceptions/StmtExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Exceptions/ViewExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Expressions/ArithExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Expressions/ConstExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Expressions/Expression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Expressions/ReadHeapExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Expressions/VarExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Expressions/eqExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Expressions/geExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Expressions/gtExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Expressions/leExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Expressions/ltExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Expressions/neExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Repository/MyIRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Repository/MyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/AssignmentStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/CloseRFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/CompStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/Fork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/IStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/IfStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/New.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/OpenRFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/PrgState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/PrintStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/ReadFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/WhileStmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/Statements/WriteHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/View/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/View/Exit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/View/Interpreter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/View/RunExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/View/TextMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/tools/MyDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/tools/MyFileDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/tools/MyHeapDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/tools/MyIDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/tools/MyIList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/tools/MyIStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/tools/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/tools/MyStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/src/tools/MyTuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/tools/MyDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/tools/MyFileDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/tools/MyHeapDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/tools/MyIDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/tools/MyIList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/tools/MyIStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/tools/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/tools/MyStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/src/tools/MyTuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2-infinity/test.in" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/RunExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/TextMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/View/Exit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="45" />
+    <option name="width" value="1350" />
+    <option name="height" value="705" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550776285304" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Interpreter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.Interpreter" />
+      <module name="MAP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Interpreter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41d1e4b4-7dd5-4ddb-ad55-d32c5afa77dd" name="Default Changelist" comment="" />
+      <created>1550776095138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550776095138</updated>
+      <workItem from="1550776098319" duration="56000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="56000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/View/RunExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/TextMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Exit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
